@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Demo</title>
+</head>
+
+<body>
+    <h1>Form Demo</h1>
+    <form action="/tacos">
+        <p>
+            <label for="user name">enter a use name:</label>
+            <input id="user name" type="text" placeholder="user name" minlength="5" maxlength="15" required>
+        </p>
+        <p>
+            <label for="password">password</label>
+            <input type="password" placeholder="password" id="password">
+        </p>
+        <p>
+            <label for="color">enter the color if u want</label>
+            <input type="color" placeholder="color" id="color">
+        </p>
+        <p>
+            <label for="number">enter the number if u want</label>
+            <input type="number" placeholder="enter the number" id="number">
+        </p>
+        <p>
+            <label for="time">select time in clock</label>
+            <input type="time">
+    </form>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="query">
+        <button>search in google</button>
+    </form>
+    <h2> More Inputs</h2>
+    <form action="/Images">
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">Agree for All</label>
+        <p>
+            <label for="DHONI"> DHONI</label>
+            <input type="radio" name="size" id="DHONI" value="gg">
+            <label for="VK">VK</label>
+            <input type="radio" name="size" id="VK">
+            <label for="JADEJA">JADEJA</label>
+            <input type="radio" name="size" id="JADEJA">
+        </p>
+        <p>
+            <label for="Dhoni">please Select an option</label>
+            <select name="Dhoni" id="Dhoni">
+                <option value="image">image</option>
+                <option value="vedio">vedio</option>
+                <option value="selfi">selfi</option>
+            </select>
+        </p>
+        <p>
+            <label for="chees">here the range for this</label>
+            <input type="range" id="chees" min="1" max="10">
+        </p>
+        <p>
+            <label for="textarea">type or write somethink here</label>
+            <textarea id="textarea" name="textarea" rows="10" cols="20">
+
+            </textarea>
+        </p>
+        <p>
+            <button>submit</button>
+        </p>
+    </form>
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">enter the name </label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="this">enter the song name</label>
+            <input type="this" id="this" name="this" minlength="5" maxlength="15" required>
+        </p>
+        <p>
+            <label for="email">enter the email:</label>
+            <input type="email" required>
+        </p>
+        <label for="url">enter the url</label>
+        <input type="url" required>
+        </p>
+        <button>submit</button>
+    </form>
+
+
+</body>
+
+</html>
